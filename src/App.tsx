@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<InvoiceList/>} />
           <Route path="/create-invoice" element={<CreateInvoice/>} />
-          <Route path="/update-invoice" element={<UpdateInvoice/>} />
+          <Route path="/update-invoice/:invoiceId" element={<UpdateInvoice/>} />
         </Routes>
       </Router>
     </>

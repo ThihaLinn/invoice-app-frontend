@@ -8,9 +8,14 @@ const Navbar = () => {
         <div>
           <Link to={"/"}>INVOICE</Link>
         </div>
-        <div className="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
+
+        
+        <button
+          className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-800 text-gray-200 shadow-md shadow-gray-900/10 hover:shadow-none hover:shadow-gray-900/20 hover:opacity-[0.85]  active:opacity-[0.85] active:shadow-none hover:text-white"
+          type="button"
+        >
           <Link to={"/create-invoice"}>Create Invoice</Link>
-        </div>
+          </button>
       </div>
     </div>
   );
